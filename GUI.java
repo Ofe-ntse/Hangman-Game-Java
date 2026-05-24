@@ -60,6 +60,7 @@ public class GUI implements ActionListener{
 {
     JOptionPane.showMessageDialog
     (null,"Letter already guessed");
+        return;
 }
     guessedLetters.add(guess);
         if(secretWord.contains(guess)){
