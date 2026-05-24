@@ -43,7 +43,7 @@ public class GUI implements ActionListener{
     }   
     @Override
     public void actionPerformed(ActionEvent e){
-       String guess = txt.getText();
+       String guess = txt.getText().toUpperCase();
        
        if (guess.isEmpty()){
            JOptionPane.showMessageDialog(null,"Invalid input");
@@ -63,11 +63,6 @@ public class GUI implements ActionListener{
         return;
 }
     guessedLetters.add(guess);
-        if(secretWord.contains(guess)){
-        JOptionPane.showMessageDialog
-        (null,"Guessed letter is in secret word");
-        return;
-        }
         boolean found = false;
         String newHiddenWord = "";
         for (int i = 0; i<secretWord.length(); i++){
@@ -87,4 +82,11 @@ public class GUI implements ActionListener{
              attempts--;
              attemptsLabel.setText("Attempts left:" + attempts);
            }
+        if(hiddenWord.equals(secretWord){
+          JOptionPane.showMessageDialog(null ,"You won!");
+        }
+    if (attempts == 0){
+            JOptionPane.showMessageDialog(null,"Game over!";)
+    }
+            
     }}
