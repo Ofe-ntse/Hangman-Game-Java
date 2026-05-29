@@ -13,6 +13,7 @@ import java.awt.event.*;
 import java.util.*;
         
 public class GUI implements ActionListener{
+   
     JFrame frame = new JFrame();
     String secretWord = "APPLE";
     String hiddenWord = "-----";
@@ -78,11 +79,13 @@ public class GUI implements ActionListener{
              attempts--;
              attemptsLabel.setText("Attempts left:" + attempts);
            }
-        if(hiddenWord.equals(secretWord){
+        if(hiddenWord.equals(secretWord)){
           JOptionPane.showMessageDialog(null ,"You won!");
+          return;
         }
     if (attempts == 0){
             JOptionPane.showMessageDialog(null,"Game over!");
+            return;
     }
             
     }
