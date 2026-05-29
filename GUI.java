@@ -49,29 +49,25 @@ public class GUI implements ActionListener{
            JOptionPane.showMessageDialog(null,"Invalid input");
            txt.setText("");
            return;
-}
-       if(guess.length() > 1)
-{
+       }
+       if(guess.length() > 1){
     JOptionPane.showMessageDialog
     (null,"Enter one letter only");
      return;
-}
-        if(guessedLetters.contains(guess))
-{
+       }
+        if(guessedLetters.contains(guess)){
     JOptionPane.showMessageDialog
     (null,"Letter already guessed");
         return;
-}
+        }
     guessedLetters.add(guess);
         boolean found = false;
         String newHiddenWord = "";
         for (int i = 0; i<secretWord.length(); i++){
-          if(secretWord.charAt(i) == guess.charAt(0))
-          {
+          if(secretWord.charAt(i) == guess.charAt(0)) {
               found = true;
               newHiddenWord = newHiddenWord + secretWord.charAt(i);
-              System.out.println("Match found at position" + i);
-          }
+              System.out.println("Match found at position" + i); }
           else{
              newHiddenWord = newHiddenWord + hiddenWord.charAt(i);
           }
@@ -86,7 +82,7 @@ public class GUI implements ActionListener{
           JOptionPane.showMessageDialog(null ,"You won!");
         }
     if (attempts == 0){
-            JOptionPane.showMessageDialog(null,"Game over!";)
+            JOptionPane.showMessageDialog(null,"Game over!");
     }
             
-    }}
+    }
