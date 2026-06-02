@@ -8,14 +8,14 @@ This project is a GUI-based Hangman game where players guess letters to figure o
 
 ## Features
 
-- **Interactive GUI**: Built with Java Swing for a user-friendly interface
-- **Word Guessing**: Guess one letter at a time to reveal the hidden word
-- **Attempt Tracking**: Keep track of remaining attempts
-- **Input Validation**: 
+- Interactive GUI: Built with Java Swing for a user-friendly interface
+- Word Guessing: Guess one letter at a time to reveal the hidden word
+- Attempt Tracking: Keep track of remaining attempts
+- Input Validation: 
   - Prevents empty guesses
   - Allows only single letter input
   - Prevents duplicate letter guesses
-- **Win/Lose Conditions**: 
+- Win/Lose Conditions: 
   - Win by revealing all letters before running out of attempts
   - Lose when attempts reach zero
 
@@ -30,9 +30,9 @@ This project is a GUI-based Hangman game where players guess letters to figure o
 
 ## Game Rules
 
-- You start with **5 attempts**
-- Each guess must be a **single letter** (case-insensitive)
-- You **cannot guess the same letter twice**
+- You start with 5 attempts
+- Each guess must be a single letter (case-insensitive)
+- You cannot guess the same letter twice
 - The game ends when you either:
   - Successfully reveal all letters (WIN)
   - Run out of attempts (GAME OVER)
@@ -62,4 +62,4 @@ This project is a GUI-based Hangman game where players guess letters to figure o
 
 ## Author
 
-240748115
+Ofentse Nkosi
